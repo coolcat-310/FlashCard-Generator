@@ -28,7 +28,8 @@ var ClozeCard = function (text, cloze) {
         //Returns text with the cloze in all Capitals.
         var text = this.partial();
         var key = this.getCloze();
-        return text.replace('...', key.toUpperCase());
+        var newkey = "'" + key + "'";
+        return text.replace('...', newkey.toUpperCase());
     }
 
 };
