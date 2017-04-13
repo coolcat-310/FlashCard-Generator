@@ -32,7 +32,6 @@ function ask(num) {
         ];
         inquirer.prompt(questions).then(function (answers) {
             console.log(num);
-            //if (num < question.length ) {
 
             if (answers.response.toUpperCase() === question[num].getCloze().toUpperCase()) {
                 score++;
